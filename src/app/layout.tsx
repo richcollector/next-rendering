@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
-// import { Inter } from 'next/font/google';
-import './globals.css';
-
-// const inter = Inter({ subsets: ['latin'] });
+import '@/utils/styles/globals.scss';
+import styles from '@/utils/styles/layout.module.scss';
+import Navigation from '@/component/nav/Navigation';
 
 export const metadata: Metadata = {
 	title: 'kim-taewan',
@@ -20,8 +19,8 @@ export default function RootLayout({
 				<title>Wiki</title>
 			</head>
 
-			<body>
-				<nav>Nav bar</nav>
+			<body className={styles.container}>
+				<Navigation />
 				{children}
 			</body>
 		</html>

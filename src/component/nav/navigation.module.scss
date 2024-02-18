@@ -1,0 +1,28 @@
+@import '@/utils/styles/_mixin';
+
+.navContainer {
+	width: 1400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	z-index: 100;
+}
+
+.navMenuUl {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	gap: 20px;
+	padding: 10px 0 10px 0;
+
+	li {
+		font-weight: bold;
+		:hover {
+			color: #ffd600;
+		}
+	}
+}

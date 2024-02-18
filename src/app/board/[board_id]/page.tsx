@@ -1,7 +1,9 @@
+import Write from '@/component/board/write/Write';
+
 export default function BoardList() {
 	return (
 		<>
-			<h1>Wiki 상세내용입니다.</h1>
+			<Write />
 		</>
 	);
 }

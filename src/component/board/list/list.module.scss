@@ -1,0 +1,41 @@
+.articleBox {
+	width: 1400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid #eeeeee;
+	margin-bottom: 10px;
+
+	:hover {
+		background-color: #eeeeee;
+	}
+}
+
+.article {
+	width: 1400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	gap: 20px;
+
+	padding: 10px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.buttonBox {
+	width: 1400px;
+	text-align: end;
+
+	margin-bottom: 10px;
+}

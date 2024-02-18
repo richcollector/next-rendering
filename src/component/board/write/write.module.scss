@@ -1,0 +1,37 @@
+.buttonBox {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+
+	margin-bottom: 10px;
+}
+
+.writeBox {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid #eeeeee;
+	padding: 20px;
+	gap: 50px;
+
+	.titleBox {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		gap: 10px;
+	}
+
+	.contentBox {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		gap: 10px;
+	}
+}

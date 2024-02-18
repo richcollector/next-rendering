@@ -1,7 +1,9 @@
+import List from '@/component/board/list/List';
+
 export default function Board() {
 	return (
 		<>
-			<h1>Wiki 입니다.</h1>
+			<List />
 		</>
 	);
 }

@@ -1,6 +1,6 @@
 import Write from '@/component/board/write/Write';
 
-export default function BoardWrite() {
+export default function BoardDetail() {
 	return (
 		<>
 			<Write />
