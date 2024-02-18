@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import '@/utils/styles/globals.scss';
-import styles from '@/utils/styles/layout.module.scss';
-import Navigation from '@/component/nav/Navigation';
+import '../utils/styles/globals.scss';
+import styles from '../utils/styles/layout.module.scss';
+import Navigation from '../component/nav/Navigation';
+import RecoilRootWrapper from '../utils/store/RecoilWrapper';
 
 export const metadata: Metadata = {
 	title: 'kim-taewan',
@@ -21,7 +22,7 @@ export default function RootLayout({
 
 			<body className={styles.container}>
 				<Navigation />
-				{children}
+				<RecoilRootWrapper>{children}</RecoilRootWrapper>
 			</body>
 		</html>
 	);

@@ -1,6 +1,6 @@
 export const MENUS = [
-	{ title: 'Home', path: '/', emoji: '📝' },
-	{ title: 'Wiki', path: '/board', emoji: '🕷' },
+	{ title: 'Home', path: '/' },
+	{ title: 'Wiki', path: '/board' },
 ];
 
-export const POSTS_PER_PAGE = 10;
+export const POSTS_PER_PAGE = 5;

@@ -1,6 +1,6 @@
 import styles from './navigation.module.scss';
 import NavMenu from './NavMenu';
-import { MENUS } from '@/utils/constants/constants';
+import { MENUS } from '../../utils/constants/constants';
 
 export default function Navigation() {
 	return (

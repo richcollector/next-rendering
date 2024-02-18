@@ -1,8 +1,17 @@
-import Pagination from '@/component/paginations/Paginations';
+import Pagination from '../../paginations/Paginations';
 import styles from './list.module.scss';
 import Link from 'next/link';
+import { boardState } from '../../../utils/store/store';
+import { useRecoilState } from 'recoil';
 
 export default function List() {
+	const [list] = useRecoilState(boardState);
+
+	console.log('list', list);
+
+	let currentPage = 1;
+	let pageTotal = list.length / 5 + 1;
+
 	return (
 		<>
 			<div className="commonBox">
@@ -15,19 +24,19 @@ export default function List() {
 				</div>
 
 				<div className={styles.box}>
-					{new Array(6).fill('제목').map((el, idx) => (
-						<li key={idx + 1}>
-							<Link href={`/board/${idx + 1}/detail`}>
+					{list.map(el => (
+						<li key={el.id}>
+							<Link href={`/board/${el.id}/detail`}>
 								<article className={styles.article}>
-									{idx + 1}
-									<h1>{el}</h1>
+									{el.id}
+									<h1>{el.title}</h1>
 								</article>
 							</Link>
 						</li>
 					))}
 				</div>
 
-				<Pagination path="/board" currentPage={1} pageTotal={2} />
+				{/* <Pagination path="/board" currentPage={currentPage} pageTotal={pageTotal} /> */}
 			</div>
 		</>
 	);

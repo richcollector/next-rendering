@@ -1,4 +1,4 @@
-import { POSTS_PER_PAGE } from '@/utils/constants/constants';
+import { POSTS_PER_PAGE } from '../../utils/constants/constants';
 import Link from 'next/link';
 // import classNames from 'classnames';
 
